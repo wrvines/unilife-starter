@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+  }
+
+  :root {
+    --bgColor: #FFFFFF;
+    --bgDarkColor: #F6FAFD;
+    --textWhite: #FFFFFF;
+    --textBlack: #000000;
+    --accentColor: #00A2E1;
+    --accentDark: #000000;
+    --accentDarkBlue: #3A5295;
+    --btnColor: #3A5295;
+
+  }
+
+  body {
+    position: relative;
+    width: 100vw;
+    height: 100%;
+  }

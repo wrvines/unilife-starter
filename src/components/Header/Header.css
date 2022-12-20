@@ -1,0 +1,29 @@
+.header {
+    background-color: var(--accentColor);
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 100vw;
+    align-items: center;
+}
+
+.logo {
+    border: 1px solid red;
+    margin-left: 5rem;
+   
+}
+
+.header-links {
+    border: 1px solid red;
+    display:flex;
+    margin-right: 5rem;
+    justify-content: space-around;
+}
+
+.shortlist {
+    width: 100px;
+}
+
+.contact {
+    width: 120px;
+}
