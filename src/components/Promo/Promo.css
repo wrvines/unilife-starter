@@ -1,0 +1,11 @@
+.inclusive-container {
+    width: 80%;
+    height: 488px;
+    background-color: var(--bgDarkColor);
+    border-radius: 24px;
+    margin: 0 auto;
+}
+
+.search-container {
+    margin: 0 auto;
+}

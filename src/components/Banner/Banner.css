@@ -12,12 +12,14 @@
 
 }
 
-/* .banner-blur {
+.banner-blur {
     background: rgba(0, 0, 0, 0.5); 
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
-    z-index: 2;
-} */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
 
 .banner-text {
     position: absolute;
@@ -26,6 +28,7 @@
     transform: translate(-50%, -50%);
     color: var(--textWhite);
     text-align: center;
+    z-index: 2;
 }
 
 .banner-text h1 {
