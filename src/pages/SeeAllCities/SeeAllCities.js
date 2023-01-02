@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import AllCities from "../../components/AllCities/AllCities";
 import Banner from "../../components/Banner/Banner";
 import "./SeeAllCities.css";
 
@@ -24,11 +25,19 @@ function SeeAllCities() {
   return (
     <div>
       <Banner />
-      <div className="all-cities-container">
-        <div className="all-cities-btns">
-          <p>{allCities?.name}</p>
-        </div>
+      {/* <div className="all-cities-container"> */}
+      <div className="all-cities-btns">
+        {allCities.map((item) => (
+          <AllCities
+            city={item}
+            key={item._id}
+            btnHeight="88px"
+            btnWidth="302px"
+            brdRadius="24px"
+          />
+        ))}
       </div>
+      {/* </div> */}
     </div>
   );
 }

@@ -38,12 +38,12 @@ function HomePage() {
           <button>Find Homes</button>
         </div>
         <h3>Student accommodations in our top cities</h3>
-        <Link to={`/citydetails/${cities?.id}`}>
+        <Link to={`/citydetails/${cities?._id}`}>
           <div className="city-wrapper">
             {cities.map((item) => (
               <CityCard
                 city={item}
-                key={item.id}
+                key={item._id}
                 imageUrl={item.image_url}
                 imgHeight="300px"
                 imgWidth="400px"

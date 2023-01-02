@@ -1,9 +1,8 @@
 .all-cities-btns {
-    height: 88px;
-    width: 302px;
-    border: 1px black solid;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    gap: 1rem;
+    margin: 1rem;
 }
 
-.all-cities-container {
-    height: 60vh;
-}

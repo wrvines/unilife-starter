@@ -26,7 +26,7 @@ function CityCard({
   };
 
   return (
-    <Link className={cardstyle} to={`/citydetails/${city?.id}`}>
+    <Link className={cardstyle} to={`/citydetails/${city?._id}`}>
       <div style={imageStyle}>
         <div className="city-blur"></div>
         <div className="city-text">

@@ -1,0 +1,21 @@
+
+
+.all-cities-card {
+    color: var(--textBlack);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 28px;
+    cursor: pointer;
+    
+}
+
+.all-cities-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .all-cities-card:hover {
+    background-color: var(--accentDarkBlue);
+    color: var(--textWhite);
+} */
