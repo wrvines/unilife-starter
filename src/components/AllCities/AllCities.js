@@ -15,7 +15,7 @@ function AllCities({ city, key, btnHeight, btnWidth, brdRadius }) {
       <div className="all-cities-wrapper" style={imageStyle}>
         <div className="all-city-text">
           <h3>{city.name}</h3>
-          <p>{city._id}</p>
+          {/* <p>{city._id}</p> */}
         </div>
       </div>
     </Link>

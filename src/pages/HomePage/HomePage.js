@@ -18,7 +18,7 @@ function HomePage() {
 
   React.useEffect(() => {
     axios
-      .get(`${baseUrl}cities`)
+      .get(`${baseUrl}cities?`)
       //   .get(`https://unilife-server.herokuapp.com/cities`)
       .then((res) => {
         console.log(res.data.response);

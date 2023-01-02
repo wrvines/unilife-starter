@@ -13,7 +13,7 @@ function SeeAllCities() {
 
   React.useEffect(() => {
     axios
-      .get(`${baseUrl}cities`)
+      .get(`${baseUrl}cities?limit=20`)
       //   .get(`https://unilife-server.herokuapp.com/cities`)
       .then((res) => {
         console.log(res.data.response);
