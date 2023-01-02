@@ -4,8 +4,72 @@
     background-color: var(--bgDarkColor);
     border-radius: 24px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inclusive-container h3 {
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.inclusive-wrapper {
+    display: flex;
+    gap: 3rem;
+}
+
+.inclusive-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inclusive-wrapper img {
+    height: 100px;
+    width: 100px;
 }
 
 .search-container {
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.search-wrapper img {
+    height: 50px;
+    width: 50px;
+}
+
+.search-container button {
+    width: 200px;
+    height: 48px;
+    background-color: var(--accentDarkBlue);
+    border-radius: 12px;
+    border: none;
+    color: var(--textWhite);
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.search-image {
+    height: 500px;
+    width: 450px;
+}
+
+.search-best, .search-favorite {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.search-body {
+    line-height: 1.5rem;
 }

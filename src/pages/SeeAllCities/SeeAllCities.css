@@ -1,0 +1,9 @@
+.all-cities-btns {
+    height: 88px;
+    width: 302px;
+    border: 1px black solid;
+}
+
+.all-cities-container {
+    height: 60vh;
+}

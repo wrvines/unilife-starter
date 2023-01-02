@@ -1,5 +1,4 @@
 
-
 .banner-container {
     
     background-image: url("../../assets/cover-img.png");
@@ -29,9 +28,15 @@
     color: var(--textWhite);
     text-align: center;
     z-index: 2;
+    line-height: 66px;
 }
 
 .banner-text h1 {
-    font-weight: 700;
-    font-size: 2.5rem;
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+.banner-text h4 {
+    font-weight: 400;
+    font-size: 1.5rem;
 }

@@ -5,7 +5,9 @@ import CityCard from "../../components/CityCard/CityCard";
 import InclusivePromo from "../../components/Promo/InclusivePromo";
 import SearchPromo from "../../components/Promo/SearchPromo";
 import Social from "../../components/Social/Social";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import "./HomePage.css";
+import CityDetails from "../CityDetails/CityDetails";
 
 function HomePage() {
   const baseUrl = process.env.REACT_APP_BASE_URL;
@@ -20,7 +22,8 @@ function HomePage() {
       //   .get(`https://unilife-server.herokuapp.com/cities`)
       .then((res) => {
         console.log(res.data.response);
-        setCities(res.data.response);
+        // console.log(res.data.response.name);
+        setCities(res.data.response.slice(0, 9));
       })
       .catch((err) => console.log(err));
   }, []);
@@ -29,16 +32,34 @@ function HomePage() {
     <div>
       <Banner />
       <div className="city-container">
-        <h3>Student accommodations in our top cities</h3>
-        <div className="city-wrapper">
-          {cities.map((item) => (
-            <CityCard city={item} />
-          ))}
-          <button onClick={() => navigate(`/allcities`)}>See All Cities</button>
+        <div className="search-bar-wrapper">
+          <input placeholder="Search by City" />
+          <input placeholder="Any Bedroom" />
+          <button>Find Homes</button>
         </div>
-        <InclusivePromo />
-        <SearchPromo />
+        <h3>Student accommodations in our top cities</h3>
+        <Link to={`/citydetails/${cities?.id}`}>
+          <div className="city-wrapper">
+            {cities.map((item) => (
+              <CityCard
+                city={item}
+                key={item.id}
+                imageUrl={item.image_url}
+                imgHeight="300px"
+                imgWidth="400px"
+                cardStyle="city-card"
+                brdRadius="24px"
+              />
+            ))}
+          </div>
+        </Link>
+
+        <button className="city-btn" onClick={() => navigate(`/allcities`)}>
+          See All Cities
+        </button>
       </div>
+      <InclusivePromo />
+      <SearchPromo />
     </div>
   );
 }
