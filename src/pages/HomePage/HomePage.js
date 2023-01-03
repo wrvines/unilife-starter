@@ -21,7 +21,7 @@ function HomePage() {
       .get(`${baseUrl}cities?`)
       //   .get(`https://unilife-server.herokuapp.com/cities`)
       .then((res) => {
-        console.log(res.data.response);
+        // console.log(res.data.response);
         // console.log(res.data.response.name);
         setCities(res.data.response.slice(0, 9));
       })

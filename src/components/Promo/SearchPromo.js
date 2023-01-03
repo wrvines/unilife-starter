@@ -11,7 +11,7 @@ function SearchPromo() {
     <div className="search-container">
       <div className="search-wrapper">
         <div className="search-best">
-          <img src={best} />
+          <img src={best} alt="" />
           <div className="search-body">
             <h4>Best selection</h4>
             <p>
@@ -21,7 +21,7 @@ function SearchPromo() {
           </div>
         </div>
         <div className="search-favorite">
-          <img src={favorite} />
+          <img src={favorite} alt="" />
           <div className="search-body">
             <h4>Your favorite</h4>
             <p>
@@ -30,10 +30,10 @@ function SearchPromo() {
             </p>
           </div>
         </div>
-        <button onClick={() => navigate(`/`)}>Search & Compare</button>
+        <button onClick={() => navigate(`/allcities`)}>Search & Compare</button>
       </div>
       <div className="search-image">
-        <img src={person} />
+        <img src={person} alt="" />
       </div>
     </div>
   );

@@ -56,6 +56,7 @@
     color: var(--textWhite);
     font-weight: 600;
     font-size: 1.25rem;
+    cursor: pointer;
 }
 
 .search-image {

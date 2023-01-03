@@ -1,13 +1,13 @@
 import axios from "axios";
 import React from "react";
-import AllCities from "../../components/AllCities/AllCities";
+import { useNavigate } from "react-router-dom";
 import Banner from "../../components/Banner/Banner";
 import "./SeeAllCities.css";
 
 function SeeAllCities() {
   const baseUrl = process.env.REACT_APP_BASE_URL;
   //   console.log(baseUrl);
-  // let navigate = useNavigate();
+  let navigate = useNavigate();
 
   const [allCities, setAllCities] = React.useState([]);
 
@@ -28,13 +28,12 @@ function SeeAllCities() {
       {/* <div className="all-cities-container"> */}
       <div className="all-cities-btns">
         {allCities.map((item) => (
-          <AllCities
-            city={item}
-            key={item._id}
-            btnHeight="88px"
-            btnWidth="302px"
-            brdRadius="24px"
-          />
+          <button
+            className="cities-btns"
+            onClick={() => navigate(`/citydetails/${item._id}`)}
+          >
+            {item.name}
+          </button>
         ))}
       </div>
       {/* </div> */}

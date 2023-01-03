@@ -7,6 +7,7 @@ import CityDetails from "./pages/CityDetails/CityDetails";
 import HomePage from "./pages/HomePage/HomePage";
 import SeeAllCities from "./pages/SeeAllCities/SeeAllCities";
 import Social from "./components/Social/Social";
+import HomeDetailPage from "./pages/HomeDetailPage/HomeDetailPage";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/allcities" element={<SeeAllCities />} />
-        <Route path="/citydetails" element={<CityDetails />} />
+        <Route path="/citydetails/:cityId" element={<CityDetails />} />
+        <Route path="/homedetails/:homeId" element={<HomeDetailPage />} />
       </Routes>
       <Social />
       <Footer />
