@@ -32,7 +32,7 @@ function HomeDetailPage() {
   return (
     <div className="home-details-container">
       <HomePics images={propertyImages} />
-      <HomeSpecs item={propertyDetails} />
+      <HomeSpecs property={propertyDetails} />
       <HomeDescription description={propertyDetails} />
       <BedroomPrices brdprices={propertyDetails} />
       <KeyFeatures keyfeatures={propertyFeatures} />

@@ -38,6 +38,7 @@
 .home-specs-top {
     height: 176px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }

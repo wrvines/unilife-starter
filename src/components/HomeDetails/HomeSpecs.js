@@ -4,42 +4,49 @@ import "./HomeDetails.css";
 import { FaPoundSign } from "react-icons/fa";
 import { IoHeartOutline } from "react-icons/io5";
 
-function HomeSpecs({ item }) {
+function HomeSpecs({ property }) {
   //   console.log(item.address);
   // const address =
   // console.log(address);
   return (
     <div className="home-specs-container">
       <div className="home-specs-wrapper">
-        <div className="home-specs-top">Address</div>
+        <div className="home-specs-top">
+          <p>
+            {property?.address?.street}, {property?.address?.city}
+          </p>
+          <p>{property?.address?.postcode}</p>
+        </div>
         <div className="home-specs-bottom">
           <p>
             Bedrooms:
             <p className="spec-accent">
-              <MdOutlineBed /> {item.bedroom_count}
+              <MdOutlineBed /> {property.bedroom_count}
             </p>
           </p>
           <p>
             Bathrooms:{" "}
             <p className="spec-accent">
-              <MdBathtub /> {item.bathroom_count}
+              <MdBathtub /> {property.bathroom_count}
             </p>
           </p>
           <p>
-            Property Type: <p className="spec-accent">{item.property_type}</p>
+            Property Type:{" "}
+            <p className="spec-accent">{property.property_type}</p>
           </p>
           <p>
             Price:{" "}
             <p className="spec-accent">
               <FaPoundSign />
-              {item.rent}
+              {property.rent}
             </p>
           </p>
           <p>
-            Furnished Type: <p className="spec-accent">{item.furnished}</p>
+            Furnished Type: <p className="spec-accent">{property.furnished}</p>
           </p>
           <p>
-            Available From: <p className="spec-accent">{item.availability}</p>
+            Available From:{" "}
+            <p className="spec-accent">{property.availability}</p>
           </p>
         </div>
       </div>
