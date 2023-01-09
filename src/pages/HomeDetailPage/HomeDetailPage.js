@@ -21,7 +21,7 @@ function HomeDetailPage() {
     axios
       .get(`${baseUrl}properties/${homeId}`)
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setPropertyDetails(res.data);
         setPropertyImages(res.data.images);
         setPropertyFeatures(res.data.key_features);
